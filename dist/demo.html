@@ -1,8 +1,17 @@
 <meta charset="utf-8">
-<title>vue-responsive-dash demo</title>
-<script src="./vue-responsive-dash.umd.js"></script>
+<title>vue-responsive-dash-fixed demo</title>
+<script src="https://unpkg.com/vue"></script>
+<script src="./vue-responsive-dash-fixed.umd.js"></script>
 
+
+<div id="app">
+  <demo></demo>
+</div>
 
 <script>
-console.log(vue-responsive-dash)
+new Vue({
+  components: {
+    demo: vue-responsive-dash-fixed
+  }
+}).$mount('#app')
 </script>
